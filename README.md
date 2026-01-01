@@ -1,30 +1,92 @@
-Tic-Tac-Toe Game
-A simple Python-based Tic-Tac-Toe game where you play against the computer. The computer uses 'X' and you use 'O'. The computer always makes the first move in the center of the board.
+# 🎮 Tic-Tac-Toe Game (Python)
 
-#Features
-Interactive Gameplay: Play against the computer in a turn-based manner
+A simple Python-based **Tic-Tac-Toe** game created as part of the **Cisco Python Essentials 1** course.  
+The game is played in the terminal, where you compete against the computer in a classic 3×3 grid.
 
-Input Validation: Ensures all user moves are valid (numeric, within range, and on free squares)
+The computer always plays with **`X`** and makes the **first move**, starting from the center of the board.  
+You play with **`O`**.
 
-Visual Board: Displays the game board with clear numbering for easy move selection
+---
 
-Win Detection: Automatically detects when either player wins or when the game ends in a tie
+## ✨ Features
 
-Random Computer Moves: The computer makes random valid moves (no AI)
+- **Interactive Gameplay**  
+  Turn-based game between the player and the computer
 
-#How to Play
-The game starts with the computer placing an 'X' in the center square (position 5)
+- **Input Validation**  
+  Ensures user input is numeric, within range (1–9), and placed on an empty square
 
-On your turn, enter the number of the square where you want to place your 'O'
+- **Visual Board Display**  
+  Clear board representation with numbered positions for easy move selection
 
-The board is numbered from 1 to 9, left to right, top to bottom
+- **Win Detection**  
+  Automatically checks for winning conditions or a tie after each move
 
-The game continues until either:
+- **Random Computer Moves**  
+  The computer selects random valid moves (no AI logic)
 
-You get three 'O's in a row (horizontally, vertically, or diagonally) - You win!
+---
 
-The computer gets three 'X's in a row - Computer wins!
+## 🕹️ How to Play
 
-All squares are filled with no winner - It's a tie!
+1. The game starts with the computer placing an **`X`** in the center square (position **5**)
+2. On your turn, enter a number between **1 and 9** to place your **`O`**
+3. The board positions are numbered as follows:
 
-Enjoy playing Tic-Tac-Toe against the computer!
+-  1 | 2 | 3
+- --+---+--
+-  4 | 5 | 6
+- --+---+--
+-  7 | 8 | 9
+
+--- 
+
+
+4. The game continues until one of the following conditions is met:
+- You place **three `O`s** in a row → **You win**
+- The computer places **three `X`s** in a row → **Computer wins**
+- All squares are filled with no winner → **Tie**
+
+---
+
+## ▶️ How to Run the Game
+
+### 🛠️ Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/itsK1M0/Tic-Tac-Toe.git
+cd Tic-Tac-Toe
+```
+
+2. Make sure Python is installed :
+
+```bash
+python --version
+```
+
+3. Run the game :
+
+```bash
+python tic_tac_toe.py
+```
+
+---
+
+## 📚 Learning Objectives
+
+This project demonstrates key Python fundamentals learned in Python Essentials 1, including:
+- Functions and control flow
+- Lists and indexing
+- Input handling and validation
+- Loops and conditional logic
+- Basic game logic implementation
+
+---
+
+## 🎯 Notes
+
++ This game does not use AI or minimax logic
++ Computer moves are randomly selected from available squares
++ Designed for learning and practice purposes
